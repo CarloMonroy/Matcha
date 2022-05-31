@@ -16,6 +16,14 @@ button {
   background-color: #025157;
 }
 
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+}
+
 .header {
   margin: 40px 20px 0;
   font-size: 0;
@@ -87,6 +95,7 @@ button {
 
 .main {
   text-align: center;
+  margin-top: 260px;
 }
 
 .main h1 {
@@ -136,5 +145,79 @@ button {
 }
 
 .publish .video .video-contenedor .cuadro-video {
+  width: 100%;
+}
+
+.features {
+  display: grid;
+  background-color: #025157;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  padding: 5% 10%;
+  height: 600px;
+}
+
+.feature-card {
+  padding: 0 15px 20px;
+}
+
+.feature-content {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feature-content .feature-text h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+
+.feature-content .feature-text p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.feature-content .feature-text a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.feature-text {
+  flex: 2;
+  padding: 15px 20px;
+}
+
+.feature-text figure {
+  margin-left: 0;
+}
+
+.feature-text figure img {
+  width: 30px;
+}
+
+.feature-image {
+  flex: 1;
+}
+
+.feature-image figure {
+  transition: width 1s;
+}
+
+.feature-image figure:hover {
+  width: 150%;
+  position: relative;
+  left: -74%;
+}
+
+.feature-image figure {
+  width: 100%;
+}
+
+.feature-image figure img {
   width: 100%;
 }
